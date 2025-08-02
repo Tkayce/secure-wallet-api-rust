@@ -1,0 +1,25 @@
+[package]
+name = "crypto-api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = { version = "0.7" }
+axum-macros = "0.4"
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1.6", features = ["serde", "v4"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1"
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio-native-tls", "macros", "uuid", "chrono"] }
+dotenvy = "0.15"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+bcrypt = "0.15"
+jsonwebtoken = "9.2.0"
+thiserror = "1"
+hyper = { version = "1", features = ["full"] }
+anyhow = "1"
+actix-web = "4"
+chrono = { version = "0.4", features = ["serde"] }
+argon2 = "0.5"
+rand_core = "0.6"
